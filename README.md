@@ -223,6 +223,43 @@ for transfer to bitkub next account from hotwallet address
   }
 }
 ```
+### POST /api/rs/admin/admin-transfer
+#### Description:
+for transfer between bitkub net account by admin
+* `from`		**string**		from address(kyc level 4) (require)
+* `to`		**string**		to address(kyc level 4) (require)
+* `amount`		**number**		amount token (require)
+#### Example:
+```
+{
+  "from": "0xca3e1f52f2F1C4D1FfC3413dff7AE0EF923d818f",
+  "to": "0x7F8B911b2d1D71155b4deA1EBEA77654943Ee12e",
+  "amount": 100
+}
+```
+### Response:
+```
+{
+  "error": 0,
+  "result": {
+    "from": "0xca3e1f52f2F1C4D1FfC3413dff7AE0EF923d818f",
+    "to": "0x7F8B911b2d1D71155b4deA1EBEA77654943Ee12e",
+    "amount": 100,
+    "fee": 0,
+    "contract_name": "POPCOIN",
+    "currency": "POP",
+    "gas_fee": 0.0003498,
+    "gas_used": 69960,
+    "block_number": 3607093,
+    "tx_hash": "0x7637b9ac17a55512ae48feef15f330fcb0e2f70ed324302d695d77f8f3d84e7d",
+    "tx_url": "https://testnet.bkcscan.com/tx/0x7637b9ac17a55512ae48feef15f330fcb0e2f70ed324302d695d77f8f3d84e7d/token-transfers",
+    "timestamp": 1650949759,
+    "created_time": "2022-04-26T05:09:19.022Z",
+    "updated_time": "2022-04-26T05:09:19.022Z",
+    "_id": "62677e7ffc3a2b001c76aed7"
+  }
+}
+```
 ### POST /api/rs/admin/whitelist-transfer
 #### Description:
 for transfer to hotwallet from whitelist address
