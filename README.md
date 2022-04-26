@@ -227,39 +227,35 @@ for transfer to bitkub next account from hotwallet address
 #### Description:
 for transfer to hotwallet from whitelist address
 #### Request body:
-* `to`		**string**		to address(kyc level 4) (require)
+* `from`		**string**		from address(kyc level 4) (require)
 * `amount`		**number**		amount token (require)
 #### Example:
 ```
 {
-  "from": "string",
-  "amount": 0
+  "from": "0x474fa09F7b986315f0654576b972E2cbc4BDdA33",
+  "amount": 100
 }
 ```
 ### Response:
 ```
 {
-  "queue_id": "62667c83de20a4001c3680af"
-}
-```
-### Response from queue id:
-```
-{
   "error": 0,
   "result": {
-    "contract_address": "0x7F8B911b2d1D71155b4deA1EBEA77654943Ee12e",
-    "contract_name": "HOTWALLET",
-    "from": "0x7F8B911b2d1D71155b4deA1EBEA77654943Ee12e",
-    "to": "0x474fa09F7b986315f0654576b972E2cbc4BDdA33",
-    "method": "TRANSFER",
-    "status": "SUCCESS",
-    "tx_hash": "0xaa438063cebca7b2155281f3f587ed8c93a937c470f36cd88de5abcfca9a37bd",
-    "tx_url": "https://testnet.bkcscan.com/tx/0xaa438063cebca7b2155281f3f587ed8c93a937c470f36cd88de5abcfca9a37bd/token-transfers",
-    "block_confirmations": 5,
-    "block_number": 3593887,
-    "block_hash": "0x2b01293b81c9e559b7ea6ecfb4401b3e96edf8b6b549130c283231c08244a439",
-    "amount": 10,
-    "currency": "POP"
+    "from": "0x474fa09F7b986315f0654576b972E2cbc4BDdA33",
+    "to": "0x7F8B911b2d1D71155b4deA1EBEA77654943Ee12e",
+    "amount": 100,
+    "fee": 0,
+    "contract_name": "POPCOIN",
+    "currency": "POP",
+    "gas_fee": 0.0003498,
+    "gas_used": 69960,
+    "block_number": 3606695,
+    "tx_hash": "0xc2e232fa45ce196b23f639d9c1c0601850efe5a31be6f9ca6678ab625faec80f",
+    "tx_url": "https://testnet.bkcscan.com/tx/0xc2e232fa45ce196b23f639d9c1c0601850efe5a31be6f9ca6678ab625faec80f/token-transfers",
+    "timestamp": 1650947768,
+    "created_time": "2022-04-26T04:36:08.265Z",
+    "updated_time": "2022-04-26T04:36:08.265Z",
+    "_id": "626776b8fc3a2b001c76aed5"
   }
 }
 ```
