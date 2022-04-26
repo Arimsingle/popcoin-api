@@ -8,8 +8,8 @@
 # Endpoint types
 ### Secure common endpoints
 All secure endpoints require authentication and use the method POST.
-* [POST /api/next/transfer](#get-transfer)
-* [POST /api/next/external-transfer](#get-externaltransfer)
+* [POST /api/rs/common/next/transfer](#get-transfer)
+* [POST /api/rs/common/next/external-transfer](#get-externaltransfer)
 ### Secure admin endpoints
 * [POST /api/rs/admin/next/mint](#get-mint)
 * [POST /api/rs/admin/next/burn](#get-burn)
@@ -24,7 +24,7 @@ Authentication requires API KEY. Every request to the server must contain the fo
 * X-RS-APIKEY: {API KEY}
 # API documentation
 Refer to the following for description of each endpoint
-### POST /api/common/next/transfer
+### POST /api/rs/common/next/transfer
 #### Description:
 for transfer to bitkub next account 
 #### Request body:
@@ -67,7 +67,7 @@ for transfer to bitkub next account
   }
 }
 ```
-### POST /api/common/next/external-transfer
+### POST /api/rs/common/next/external-transfer
 #### Description:
 for transfer to external account 
 #### Request body:
@@ -107,7 +107,7 @@ for transfer to external account
   }
 }
 ```
-### POST /api/common/next/mint
+### POST /api/rs/admin/next/mint
 #### Description:
 for mint bitkub next account 
 #### Request body:
@@ -145,7 +145,7 @@ for mint bitkub next account
   }
 }
 ```
-### POST /api/common/next/burn
+### POST /api/rs/admin/next/burn
 #### Description:
 for burn bitkub next account 
 #### Request body:
